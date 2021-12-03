@@ -11,4 +11,7 @@ then
     echo 'CREATE DATABASE tbench' | mysql -u root -p$PASSWORD
 else
     rm -f /dev/shm/db.sqlite3
+
+    # TODO: this assumes the script has been called from a bench.sh script
+    rm -f ../db.sqlite3
 fi

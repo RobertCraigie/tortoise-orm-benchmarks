@@ -23,6 +23,7 @@ pony/bench.sh | tee -a outfile1
 sqlalchemy/bench.sh | tee -a outfile1
 sqlobject/bench.sh | tee -a outfile1
 tortoise/bench.sh | tee -a outfile1
+prisma/bench.sh | tee -a outfile1
 
 
 echo Test 2
@@ -35,7 +36,7 @@ pony/bench.sh | tee -a outfile2
 sqlalchemy/bench.sh | tee -a outfile2
 sqlobject/bench.sh | tee -a outfile2
 tortoise/bench.sh | tee -a outfile2
-
+prisma/bench.sh | tee -a outfile1
 
 echo Test 3
 export TEST=3
@@ -47,6 +48,7 @@ pony/bench.sh | tee -a outfile3
 sqlalchemy/bench.sh | tee -a outfile3
 sqlobject/bench.sh | tee -a outfile3
 tortoise/bench.sh | tee -a outfile3
+prisma/bench.sh | tee -a outfile1
 
 echo `python -V`, Iterations: $ITERATIONS DBtype: $DBTYPE | tee -a results
 cat outfile1 | ./present.py "Test 1" | tee -a results

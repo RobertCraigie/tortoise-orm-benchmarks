@@ -1,0 +1,14 @@
+generator client {
+  provider  = "prisma-client-py"
+  interface = "asyncio"
+}
+
+model Journal {
+  id        Int      @id @default(autoincrement())
+  timestamp DateTime @default(now())
+  level     Int
+  text      String
+
+  @@index([text], map: "ix_journal_text")
+  @@index([level], map: "ix_journal_level")
+}

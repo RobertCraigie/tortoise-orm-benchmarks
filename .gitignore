@@ -111,3 +111,7 @@ outfile*
 
 benchmarks/results
 benchmarks/results_all
+
+# auto-generated files
+benchmarks/prisma/schema.prisma
+benchmarks/prisma/models.prisma
