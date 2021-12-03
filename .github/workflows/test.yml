@@ -21,6 +21,9 @@ jobs:
             tox-env: py39
     env:
       PASSWORD: orm_benchmarks
+      PGPASSWORD: orm_benchmarks
+      PGDATABASE: tbench
+      POSTGRES_HOST: localhost
 
     services:
       postgres:
