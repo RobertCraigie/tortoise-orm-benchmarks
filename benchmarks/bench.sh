@@ -10,6 +10,8 @@ fi
 
 cd $(dirname $0)
 
+set -ex
+
 echo Iterations: $ITERATIONS
 
 
