@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -ex
+
 echo > results
 
 DBTYPE=sqlite ./bench.sh $1
