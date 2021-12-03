@@ -8,6 +8,8 @@ on:
     branches:
       - master
 
+# TODO: cache deps
+
 jobs:
   benchmark:
     name: benchmark

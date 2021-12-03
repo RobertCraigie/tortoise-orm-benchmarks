@@ -4,6 +4,10 @@ set -ex
 
 cd $(dirname $0)
 
+pwd
+
+ls -a .
+
 echo > results
 
 DBTYPE=sqlite ./bench.sh $1
