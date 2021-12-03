@@ -3,6 +3,7 @@ on:
   push:
     branches:
       - master
+      - ci/github
   pull_request:
     branches:
       - master
