@@ -59,7 +59,7 @@ jobs:
 
       - name: Run benchmarks
         run: |
-          poetry run benchmarks/bench_all.sh
+          poetry run bash -e benchmarks/bench_all.sh
       
       - uses: actions/upload-artifact@v2
         with:
