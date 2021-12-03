@@ -30,7 +30,7 @@ jobs:
         # Provide the password for postgres
         env:
           POSTGRES_PASSWORD: orm_benchmarks
-          POSTGRES_DATABASE: tbench
+          POSTGRES_DB: tbench
 
         # Set health checks to wait until postgres has started
         options: >-
