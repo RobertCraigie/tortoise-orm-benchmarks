@@ -19,6 +19,8 @@ jobs:
         include:
           - python-version: 3.9
             tox-env: py39
+    env:
+      PASSWORD: orm_benchmarks
 
     services:
       postgres:
@@ -27,7 +29,8 @@ jobs:
 
         # Provide the password for postgres
         env:
-          POSTGRES_PASSWORD: postgres
+          POSTGRES_PASSWORD: orm_benchmarks
+          PGDATABASE: tbench
 
         # Set health checks to wait until postgres has started
         options: >-
