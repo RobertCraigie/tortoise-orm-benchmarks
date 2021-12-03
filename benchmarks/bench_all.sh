@@ -2,6 +2,8 @@
 
 set -ex
 
+cd $(dirname $0)
+
 echo > results
 
 DBTYPE=sqlite ./bench.sh $1
