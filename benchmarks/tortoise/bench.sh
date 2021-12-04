@@ -2,7 +2,7 @@
 
 cd $(dirname $0)
 
-set -ex
+set -e
 
 PYPY=`python -V | grep PyPy`
 
