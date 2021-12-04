@@ -23,7 +23,7 @@ jobs:
       PASSWORD: orm_benchmarks
       PGPASSWORD: orm_benchmarks
       PGDATABASE: tbench
-      POSTGRES_HOST: localhost
+      PGHOST: 127.0.0.1
 
     services:
       postgres:
