@@ -9,7 +9,7 @@ then
         psql -U postgres -w -c 'create database tbench';
     else
         # NOTE: assumes this script is being ran from a bench.sh script
-        psql -U postgres -w -f ../clean.sql;
+        psql -U postgres -w -f ../clean.sql >> /dev/null;
     fi
 elif [ "$DBTYPE" = "mysql" ]
 then
