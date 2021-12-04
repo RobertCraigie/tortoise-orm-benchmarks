@@ -2,6 +2,8 @@
 
 cd $(dirname $0)
 
+set -ex
+
 # setup DB
 ../db.sh
 PYTHONPATH="." sqlobject-admin create -m models

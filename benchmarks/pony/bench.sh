@@ -1,6 +1,7 @@
 #!/bin/sh
 
 cd $(dirname $0)
+set -ex
 
 # setup DB
 ../db.sh
