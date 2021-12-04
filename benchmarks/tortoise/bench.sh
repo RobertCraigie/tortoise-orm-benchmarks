@@ -2,9 +2,9 @@
 
 cd $(dirname $0)
 
-set -e
-
 PYPY=`python -V | grep PyPy`
+
+set -ex
 
 # setup DB
 ../db.sh
